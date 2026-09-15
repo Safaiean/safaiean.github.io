@@ -1,0 +1,9 @@
+/* Compact profile portrait override */
+.hero-grid{grid-template-columns:minmax(0,1fr) 132px;gap:42px;align-items:start}
+.portrait-wrap{justify-content:flex-end;padding-top:34px}
+.portrait-frame{width:132px!important;height:132px!important;aspect-ratio:1/1!important;border-radius:50%!important;transform:none!important;box-shadow:0 8px 24px rgba(16,24,40,.10)!important;border:4px solid rgba(255,255,255,.78)}
+.portrait-frame:before{display:none}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center 24%}
+.portrait-label{display:none!important}
+@media(max-width:900px){.hero-grid{display:grid;grid-template-columns:1fr;gap:18px}.hero-main{display:block}.portrait-wrap{justify-content:flex-start;padding-top:0;margin:4px 0 2px}.portrait-frame{width:96px!important;height:96px!important}.eyebrow,h1,.hero-copy,.now-line,.hero-actions{order:initial}.now-line{margin-top:22px}.hero-actions{margin-top:24px}}
+@media(max-width:480px){.portrait-frame{width:84px!important;height:84px!important}.portrait-wrap{margin:2px 0}.hero-grid{gap:16px}}
