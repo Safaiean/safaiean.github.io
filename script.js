@@ -1,3 +1,9 @@
+// Load the V4 corrective design layer after the base stylesheet.
+const v4 = document.createElement('link');
+v4.rel = 'stylesheet';
+v4.href = 'v4.css?v=4';
+document.head.appendChild(v4);
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const reveal = new IntersectionObserver((entries) => {
